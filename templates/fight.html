@@ -14,14 +14,16 @@
             <p><em>Экипировка:</em></p>
             <hr>
             <p>Оружие: {{ heroes.player.weapon.name }}, урон: {{ heroes.player.weapon.min_damage }} - {{ heroes.player.weapon.max_damage }}</br> Броня:
-              {{ heroes.player.armor.name }}, защита: {{ heroes.player.armor.defence }}</p>
+              {{ heroes.player.armor.name }}, защита: {{ heroes.player.armor.defence }}
+            </br> Умение:
+              {{ heroes.player.unit_class.skill.name }}, урон: {{ heroes.player.unit_class.skill.damage }}</p>
             <hr>
             <p><em>Информация:</em></p>
             <hr>
             <p>Очки здоровья: {{ heroes.player.health_points }}/{{ heroes.player.unit_class.max_health }}</br> Очки выносливости:
               {{ heroes.player.stamina_points }}/{{ heroes.player.unit_class.max_stamina }}</p>
           </div>
-          <div class="col align-self-center">
+          <div class="col align-self-center" align="center">
             <button type="button" onclick="window.location.href='/fight/hit'" class="btn btn-success m-2">Нанести удар</button></br>
             <button type="button" onclick="window.location.href='/fight/use-skill'" class="btn btn-danger m-2">Использовать умение</button></br>
             <button type="button" onclick="window.location.href='/fight/pass-turn'" class="btn btn-warning m-2">Пропустить ход</button></br>
@@ -32,7 +34,8 @@
             <p><em>Экипировка:</em></p>
             <hr>
             <p>Оружие: {{ heroes.enemy.weapon.name }}, урон: {{ heroes.enemy.weapon.min_damage }} - {{ heroes.enemy.weapon.max_damage }}</br> Броня:
-              {{ heroes.enemy.armor.name }}, защита: {{ heroes.enemy.armor.defence }}</p>
+              {{ heroes.enemy.armor.name }}, защита: {{ heroes.enemy.armor.defence }}</br> Умение:
+              {{ heroes.enemy.unit_class.skill.name }}, урон: {{ heroes.enemy.unit_class.skill.damage }}</p>
             <hr>
             <p><em>Информация:</em></p>
             <hr>
